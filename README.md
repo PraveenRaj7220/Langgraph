@@ -1,10 +1,6 @@
 LangGraph Agentic Workflow with Together API
 This project implements a dual-loop agentic workflow using LangGraph and Together API, inspired by the architecture diagram provided. It processes a user query by decomposing it into subtasks, solving them one by one, validating results, and allowing user refinement.
 
-🧠 Architecture Overview
-Outer Loop: Planning & Iteration
-Takes a User Query and breaks it into subtasks via the PlanAgent.
-
 Subtasks are solved one-by-one using a ToolAgent.
 After solving, the ReflectionAgent (an LLM call) validates the results.
 Based on the feedback, subtasks can be:
